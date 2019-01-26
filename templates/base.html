@@ -1,0 +1,74 @@
+{% load staticfiles %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+
+    {% block title %}
+        <title>Áldásforrás</title>
+    {% endblock %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/logo.jpg' %}"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+        <button class="navbar-toggler  mr-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'home' %}>{% trans 'About Us' %}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'donate' %}>{% trans 'Donate' %}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'contact' %}>{% trans 'Contact' %}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="home" class="container header">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="{% static 'images/logo.jpg' %}" width="200">
+                </div>
+                <div class="col-md-9">
+                    <h1>Áldás Forrás Alapítvány</h1>
+                </div>
+            </div>
+            <div id="ige">
+                <h4>{% trans '"Carry each other’s burdens" Gal 6.2' %}</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>

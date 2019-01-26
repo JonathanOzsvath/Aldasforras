@@ -1,0 +1,63 @@
+body {
+    background-color: #f5eade !important;
+}
+
+.jumbotron {
+    /*margin-top: 50px;*/
+    background-color: #eabf8c !important;
+    min-width: 250px !important;
+}
+
+#home h1 {
+    color: #663300;
+    font-size: 50px !important;
+}
+
+#ige {
+    float: right;
+}
+
+#ige h4 {
+    color: #663300;
+}
+
+#plakat {
+    text-align: center;
+}
+
+#plakat img {
+    width: 100%;
+    max-width: 500px;
+}
+
+#church {
+    width: 100%;
+    max-width: 300px;
+}
+
+.card {
+    margin-top: 10px !important;
+    min-width: 250px !important;
+}
+
+.card-header {
+    background-color: #eabf8c !important;
+    color: #42314d !important;
+    min-width: 250px !important;
+}
+
+.card-body {
+    background-color: #fffefc !important;
+    color: #42314d !important;
+    min-width: 250px !important;
+}
+
+#p_contact {
+    font-size: 1.0rem;
+}
+
+.aboutuslist {
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}

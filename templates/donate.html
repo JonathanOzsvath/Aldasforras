@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block content %}
+    <div id="plakat">
+        {% get_current_language as LANGUAGE_CODE %}
+        <h1>{{ LANGUAGE_CODE }}</h1>
+
+        {% comment %}<form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ redirect_to }}">
+            <select name="language" id="">
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                        {{ language.name_local }} ({{ language.code }})
+                    </option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Go">
+        </form>{% endcomment %}
+
+
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == 'hu' %}
+            <img src="{% static 'images/plakat.jpg' %}">
+        {% endif %}
+    </div>
+    {# end plakat #}
+{% endblock %}

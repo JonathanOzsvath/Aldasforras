@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block content %}
+   {# start contact #}
+    <div>
+        <div class="card-header mt-5">
+            <h1>{% trans 'Contact' %}</h1>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="card-img-top" id="church" src="{% static 'images/templom.jpg' %}">
+                </div>
+                <div class="col-sm-5 ml-5 mt-5">
+                    <p class="p_contact card-text"><b>{% trans 'Phone:'%}</b> +3670/567-7777</p>
+                    <p class="p_contact card-text mt-5"><b>E-mail:</b> aldasforras@gmail.com</p>
+                    <p class="p_contact card-text mt-5"><b>{% trans 'Seat:'%}</b> 4254 Nyíradony, Vörösmarty u. 11.</p>
+                    <p class="p_contact card-text mt-5"><b>{% trans 'Store-house:'%}</b> 4031 Debrecen, Bartók Béla út 105.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# end contact #}
+{% endblock %}

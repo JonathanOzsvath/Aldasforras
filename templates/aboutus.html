@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block content %}
+    {# start aboutus #}
+    <div class="card">
+        <div class="card-header">
+            <h1>{% trans 'About Us' %}</h1>
+        </div>
+        <div class="card-body">
+            <p>{% trans 'Blessing Source is a christian-related foundation established in 2016 to help socially unprivileged families, support hadicapped children’s families both financially and in kind irrespective origin, nationality, religio and flesh colour in Hungary and nearby countries.' %}A
+            </p>
+            <h2 class="card-title">{% trans 'Our aims:' %}</h2>
+            <ul class="list-group list-group-flush">
+                <li class="aboutuslist">{% trans 'provide personal provision for socially unprivileged people' %}</li>
+                <li class="aboutuslist">{% trans 'create equal life prospects' %}</li>
+                <li class="aboutuslist">{% trans 'offer home-help for those who are unable to self-supporting and nobody cares them' %}</li>
+                <li class="aboutuslist">{% trans 'strengthen over-border relations and support there the socially unprivileged people' %}</li>
+                <li class="aboutuslist">{% trans 'give extra help for families in deep poverty and handicapped people' %}</li>
+                <li class="aboutuslist">{% trans 'organise internal holidays for socially unprivileged people and families, support them to imporve their physical and mental health' %}</li>
+                <li class="aboutuslist">{% trans 'help socially unprivileged people and their family members with finding workplace' %}</li>
+
+                <h3 class="card-title mt-4">{% trans 'What do we do? We do:' %}</h3>
+                <p class="card-text">{% trans 'We assist the applicant to solve their family problems, find the source of the disadvantageous causes affecting their life style, help to arrange them and give mental help, as well. If if is required, we also give advice regarding life style organizing and other areas. We continuously observ the situation of the unprivileged families at our field of activity. We organise team work in the field of education, mental hygiene and recreation. We offer accomodation for familes and family fractions in crisis fighting with residence problems. We collect and forward donation for people in need. We look for work opportunities for handicapped people and unprivileged families.' %}</p>
+            </ul>
+        </div>
+    </div>
+    {# end aboutus #}
+{% endblock %}
