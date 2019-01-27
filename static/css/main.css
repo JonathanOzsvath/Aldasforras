@@ -8,9 +8,14 @@ body {
     min-width: 250px !important;
 }
 
+#logo {
+    width: 90%;
+    height: auto;
+}
+
 #home h1 {
     color: #663300;
-    font-size: 50px !important;
+    font-size: 5vw !important;
 }
 
 #ige {
@@ -19,6 +24,7 @@ body {
 
 #ige h4 {
     color: #663300;
+    font-size: 2vw;
 }
 
 #plakat {
