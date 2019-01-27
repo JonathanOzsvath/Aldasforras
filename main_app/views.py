@@ -2,8 +2,12 @@ from django.shortcuts import render
 
 
 # Create your views here.
+from Aldasforras import settings
+
+
 def home(request):
-    return render(request, 'aboutus.html')
+    basedir = settings.BASE_DIR
+    return render(request, 'aboutus.html', {'basedir': basedir})
 
 
 def donate(request):
