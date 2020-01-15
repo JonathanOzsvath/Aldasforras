@@ -1,0 +1,5 @@
+//generate language file
+django-admin makemessage -l hu
+
+//compile messages
+django-admin compilemessages
