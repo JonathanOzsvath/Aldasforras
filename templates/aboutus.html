@@ -24,9 +24,15 @@
         <input type="submit" value="Go">
     </form>
 
+{#    <form action="{% url 'set_language' %}" method="post">#}
+{#        {% csrf_token %}#}
+{#        <button id="flag_hu" type="submit" name="language" value="hu"></button>#}
+{#        <a type="submit" name="language" value="hu"><img height="15px" width="20px" src="{% static 'images/hu.png' %}"></a>#}
+{#        <input height="15px" type="image" src="{% static 'images/hu.png' %}" name="language" value="hu" alt="Submit Form">#}
+{#    </form>#}
     <form action="{% url 'set_language' %}" method="post">
         {% csrf_token %}
-        <a type="submit" name="language" value="hu">Magyar</a>
+        <button type="submit" name="language" value="en">Angol</button>
     </form>
 
     <div class="card">
