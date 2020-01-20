@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -28,11 +30,13 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'images/logo.png' %}"/>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-default navbar-expand-md fixed-top">
     <div class="container">
         <button class="navbar-toggler  mr-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">
+                <i class="fa fa-navicon" style="font-size:28px;"></i>
+            </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
@@ -47,12 +51,24 @@
                 </li>
             </ul>
             <ul class="navbar-nav navbar-right">
-                 <li class="nav-item">
-                    <a href="javascript:void(0)" class="nav-link" id="flag_hu"><img height="15px" width="20px" src="{% static 'images/hu.png' %}"></a>
-                </li>
                 <li class="nav-item">
-                    <a href="javascript:void(0)" class="nav-link" id="flag_en"><img height="15px" width="20px" src="{% static 'images/gb.png' %}"></a>
+                    <a class="nav-link" href="#" onclick="setLang('hu');">
+                        <img height="15px" width="20px" src="{% static 'images/hu.png' %}" alt="Magyar"/>
+                    </a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="setLang('en');">
+                        <img height="15px" width="20px" src="{% static 'images/gb.png' %}" alt="Magyar"/>
+                    </a>
+                </li>
+                <form id="langForm" action="/i18n/setlang/" method="post" style="display:none;">
+                    {% csrf_token %}
+                    <select name="language">
+                        <option value="hu">Magyar</option>
+                        <option value="en">English</option>
+                    </select>
+                </form>
             </ul>
         </div>
     </div>

@@ -1,5 +1,5 @@
 //generate language file
-django-admin makemessage -l hu
+django-admin makemessages -l hu
 
 //compile messages
 django-admin compilemessages

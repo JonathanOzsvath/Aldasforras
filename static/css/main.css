@@ -3,7 +3,7 @@ body {
 }
 
 .jumbotron {
-    /*margin-top: 50px;*/
+    margin-top: 50px;
     background-color: #eabf8c !important;
     min-width: 250px !important;
 }
@@ -66,4 +66,32 @@ body {
     list-style-type: circle;
     margin-left: 20px;
     margin-bottom: 5px;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #fffefc;
+}
+
+.fa-navicon {
+    color: #663300;
+}
+
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #663300;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #663300;
+}
+
+.navbar-default .nav-item:hover {
+    background-color: #eabf8c;
+}
+
+.navbar-default .navbar-right .nav-item:hover {
+    background-color: #fffefc;
 }
