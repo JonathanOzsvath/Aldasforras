@@ -4,10 +4,42 @@
 
 {% block content %}
     {# start aboutus #}
+
+{#    {% get_current_language as LANGUAGE_CODE %}#}
+{##}
+{#    <h1>{{ LANGUAGE_CODE }}</h1>#}
+{##}
+{#    <form action="{% url 'set_language' %}" method="post">#}
+{#        {% csrf_token %}#}
+{#        <input type="hidden" name="text" value="{{ redirect_to }}">#}
+{#        <select name="language" id="">#}
+{#            {% get_available_languages as LANGUAGES %}#}
+{#            {% get_language_info_list for LANGUAGES as languages %}#}
+{#            {% for language in languages %}#}
+{#                <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>#}
+{#                    {{ language.name_local }} ({{ language.code }})#}
+{#                </option>#}
+{#            {% endfor %}#}
+{#        </select>#}
+{#        <input type="submit" value="Go">#}
+{#    </form>#}
+
+{#    <form action="{% url 'set_language' %}" method="post">#}
+{#        {% csrf_token %}#}
+{#        <button id="flag_hu" type="submit" name="language" value="hu"></button>#}
+{#        <a type="submit" name="language" value="hu"><img height="15px" width="20px" src="{% static 'images/hu.png' %}"></a>#}
+{#        <input height="15px" type="image" src="{% static 'images/hu.png' %}" name="language" value="hu" alt="Submit Form">#}
+{#    </form>#}
+
+{#    <form action="{% url 'set_language' %}" method="post">#}
+{#        {% csrf_token %}#}
+{#        <button type="submit" name="language" value="en">Angol</button>#}
+{#    </form>#}
+
     <div class="card">
         <div class="card-header">
             <h1>{% trans 'About Us' %}</h1>
-{#            <p>{{ basedir }}</p>#}
+            {#            <p>{{ basedir }}</p>#}
         </div>
         <div class="card-body">
             <p>{% trans 'Blessing Source is a christian-related foundation established in 2016 to help socially unprivileged families, support hadicapped children’s families both financially and in kind irrespective origin, nationality, religio and flesh colour in Hungary and nearby countries.' %}A
