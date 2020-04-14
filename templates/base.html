@@ -47,6 +47,16 @@
                     <a class="nav-link" href={% url 'donate' %}>{% trans 'Donate' %}</a>
                 </li>
                 <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">{% trans 'Annual reports' %}</button>
+                        <div class="dropdown-content">
+                            <a href="{% static 'pdf/2017_eves_beszamolo.pdf' %}" download="2017_eves_beszamolo">{% trans '2017 annual report' %}</a>
+                            <a href="{% static 'pdf/2018_eves_beszamolo.pdf' %}" download="2018_eves_beszamolo">{% trans '2018 annual report' %}</a>
+                            <a href="{% static 'pdf/2019_eves_beszamolo.pdf' %}" download="2019_eves_beszamolo">{% trans '2019 annual report' %}</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href={% url 'contact' %}>{% trans 'Contact' %}</a>
                 </li>
             </ul>

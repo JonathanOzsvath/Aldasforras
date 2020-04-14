@@ -95,3 +95,50 @@ body {
 .navbar-default .navbar-right .nav-item:hover {
     background-color: #fffefc;
 }
+
+.dropbtn,
+.dropbtn:focus {
+    background-color: #fffefc;
+    color: #663300;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 185px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #663300;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #eabf8c;
+    color: #663300;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #eabf8c;
+}

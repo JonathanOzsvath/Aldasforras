@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 18:35+0100\n"
+"POT-Creation-Date: 2020-04-14 21:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,7 +122,23 @@ msgstr "Adományozás"
 msgid "Contact"
 msgstr "Kapcsolatok"
 
-#: .\templates\base.html:77
+#: .\templates\base.html:54
+msgid "Annual reports"
+msgstr "Éves beszámolók"
+
+#: .\templates\base.html:56
+msgid "2017 annual report"
+msgstr "2017 éves beszámoló"
+
+#: .\templates\base.html:57
+msgid "2018 annual report"
+msgstr "2018 éves beszámoló"
+
+#: .\templates\base.html:58
+msgid "2019 annual report"
+msgstr "2019 éves beszámoló"
+
+#: .\templates\base.html:99
 msgid "\"Carry each other’s burdens\" Gal 6.2"
 msgstr "\"Egymás terhét hordozzátok\" Gal 6.2"
 
