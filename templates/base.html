@@ -43,9 +43,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href={% url 'home' %}>{% trans 'About Us' %}</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href={% url 'donate' %}>{% trans 'Donate' %}</a>
-                </li>
+                {% get_current_language as LANGUAGE_CODE %}
+                {% if LANGUAGE_CODE == 'hu' %}
+                    <li class="nav-item">
+                        <a class="nav-link" href={% url 'donate' %}>{% trans 'Donate' %}</a>
+                    </li>
+                {% endif %}
                 <li class="nav-item">
                     <div class="dropdown">
                         <button class="dropbtn">{% trans 'Annual reports' %}</button>
