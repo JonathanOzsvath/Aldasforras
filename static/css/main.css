@@ -73,6 +73,10 @@ body {
     background-color: #fffefc;
 }
 
+.nav-item {
+    margin-right: 5px;
+}
+
 .fa-navicon {
     color: #663300;
 }
@@ -141,4 +145,8 @@ body {
 
 .dropdown:hover .dropbtn {
     background-color: #eabf8c;
+}
+
+#szja img {
+    width: 100%;
 }

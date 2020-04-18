@@ -16,3 +16,7 @@ def donate(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+
+def szja(request):
+    return render(request, 'szja.html')
