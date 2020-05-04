@@ -7,6 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta property="og:title" content="Áldás Forrás Alapítvány"/>
+    <meta property="og:image" content="http://aldasforras.hu/static/images/logo2.jpg"/>
+
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,7 +30,7 @@
     {% block title %}
         <title>Áldásforrás</title>
     {% endblock %}
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/logo.png' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/logo.png' %}" alt="Logo"/>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-expand-md fixed-top">
@@ -95,7 +98,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <img id="logo" src="{% static 'images/logo.png' %}">
+                    <img id="logo" src="{% static 'images/logo.png' %}" alt="Logo">
                 </div>
                 <div class="col-md-9">
                     <h1>Áldás Forrás Alapítvány</h1>
