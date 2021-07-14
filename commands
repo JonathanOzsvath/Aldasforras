@@ -3,3 +3,7 @@ django-admin makemessages -l hu
 
 //compile messages
 django-admin compilemessages
+
+
+// SSL For Free
+// 2021okt.12-ig
